@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<head>
+    <title>Hong Nguyen</title>
+    <script>function myFunction(scroll_to) {const element = document.getElementById(scroll_to);
+    element.scrollIntoView()}</script>
+    <style>
+        .horizontal div {display:grid; place-items: center; padding: 20px}
+        html {scroll-behavior: smooth}
+        #mainblock { margin: 100px; display:grid; grid-template-columns: 100% 100% 100% 100%; column-gap: 230px}
+        img {border-radius: 50%}
+        body {background-image: url("https://wallpapers.com/images/high/electronic-circuit-schematic-background-9sitivru7pj8l99m.webp")}
+        .text1 {overflow-wrap: anywhere}
+        .title {width: 318px; background-color: white; text-align: center; font-size: 50px; height:55px; border-radius: 20px; font-weight: bolder;}
+        .block_of_main {display:grid; grid-template-rows:40px 30px auto; row-gap: 45px}
+        .option {height: 30px; border-radius: 20px;place-items: center; display: grid; grid-template-columns: minmax(154px, 25%)  minmax(154px, 25%)
+        minmax(154px, 25%)  minmax(154px, 25%)}
+        .option div {font-size: 17px}
+        .horizontal1 { display:grid; grid-template-columns: 3% minmax(200px, 920px) 3%; place-items:center; column-gap:50px}
+        .button1 {display:grid; place-content: baseline }
+        .button1  button {width: 70px; height:70px; place-content:start}
+        .title1 {display:grid; grid-template-columns: 70px auto 70px; place-items: center}
+        .bleft, .bright {border-radius: 15px; width:70px; height:70px}
+        .bleft {background-image: url('https://d1nhio0ox7pgb.cloudfront.net/_img/v_collection_png/512x512/shadow/keyboard_key_left.png'); background-size: cover}
+        .bright {background-image: url('https://d1nhio0ox7pgb.cloudfront.net/_img/v_collection_png/512x512/shadow/keyboard_key_right.png'); background-size: cover}
+        #menubar {display:grid; grid-template-columns:100% 100% 100% 100%; column-gap: 40px}
+        .option > div {background-color: white; width: 130px; border-radius:20px; text-align: center; height: 30px; place-content: center}
+        .option > div:hover {text-decoration: underline; cursor: pointer}
+        body {overflow: hidden}
+        button:hover {border-color: grey; border-width: 5px}
+        .am {onclick: "m"}
+        @media (min-width: 700px) {
+            .horizontal {
+                background-color: white;
+                border-radius: 20px;
+                display: grid;
+                grid-template-columns: 120px auto
+            }
+        }
+        @media (max-width: 700px) {
+
+            .horizontal {
+                background-color: white;
+                border-radius: 20px;
+                display: grid;
+                grid-template-rows: 105px auto
+            }
+        }
+    </style>
+    <script> function scroll_to() {const goto = document.getElementById("exp")}
+    </script>
+</head>
+<body>
+    <div id = "menubar">
+    <div class = 'option' id = "o1">
+        <div class = "am" onclick = "myFunction('o1')">ABOUT ME</div>
+        <div class = "skill"  onclick = "myFunction('o2')">SKILL</div>
+        <div class = "ed"  onclick = "myFunction('o3')">EDUCATION</div>
+        <div class = "c"  onclick = "myFunction('o4')">CONTACT</div>
+    </div>
+       <div class = 'option' id = "o2">
+        <div class = "am" onclick = "myFunction('o1')">ABOUT ME</div>
+        <div class = "skill"  onclick = "myFunction('o2')">SKILL</div>
+        <div class = "ed"  onclick = "myFunction('o3')">EDUCATION</div>
+        <div class = "c"  onclick = "myFunction('o4')">CONTACT</div>
+    </div>
+        <div class = 'option' id = "o3">
+        <div class = "am" onclick = "myFunction('o1')">ABOUT ME</div>
+        <div class = "skill"  onclick = "myFunction('o2')">SKILL</div>
+        <div class = "ed"  onclick = "myFunction('o3')">EDUCATION</div>
+        <div class = "c"  onclick = "myFunction('o4')">CONTACT</div>
+    </div>
+         <div class = 'option' id = "o4">
+        <div class = "am" onclick = "myFunction('o1')">ABOUT ME</div>
+        <div class = "skill"  onclick = "myFunction('o2')">SKILL</div>
+        <div class = "ed"  onclick = "myFunction('o3')">EDUCATION</div>
+        <div class = "c"  onclick = "myFunction('o4')">CONTACT</div>
+    </div>
+        </div>
+    <div id ="main">
+
+    <div id = "mainblock">
+
+     <div class="with_button" id = "am">
+
+        <div class = "block_of_main">
+        <div></div>
+
+            <div class = "title1"> <div></div> <div class="title"> ABOUT ME </div><div></div></div>
+            <div class = "horizontal1">
+             <div class = "button1" ><button class = "bleft" onclick = "myFunction('o4')"></button></div>
+        <div class = "horizontal">
+            <div><img src = "me.jpg" class = "Hong Nguyen" width = 100px></div>
+            <div class = "text1">
+                <p> I am Hong, a computer Science student at UCI.
+            I am interested in enhancing more programming skill.
+            And investigating about machine learning.</p>
+
+            </div>
+            </div>
+            <div class = "button1" ><button class = "bright" onclick="myFunction('o2')" ></button></div>
+                </div>
+        </div>
+        </div>
+
+     <div class="with_button" id = "exp">
+
+        <div class = "block_of_main">
+        <div></div>
+
+            <div class = "title1"> <div></div> <div class="title"> SKILL </div><div></div></div>
+            <div class = "horizontal1">
+             <div class = "button1" ><button  class = "bleft" onclick=myFunction("o1")>
+             </button></div>
+        <div class = "horizontal">
+            <div><img src = "me.jpg" class = "Hong Nguyen" width = 100px></div>
+            <div class = "text1">
+                <ul> <li> Language: Python</li>
+                <li>Front-End: HTML, CSS, JavaScript</li>
+                    <li>Framework: ReactJS</li>
+                </ul>
+            </div>
+            </div>
+            <div class = "button1" ><button  onclick=myFunction("o3") class = "bright"></button></div>
+                </div>
+        </div>
+        </div>
+
+
+     <div class="with_button" id = "ed">
+
+        <div class = "block_of_main">
+        <div></div>
+
+            <div class = "title1"> <div></div> <div class="title"> EDUCATION </div><div></div></div>
+            <div class = "horizontal1">
+             <div class = "button1" ><button class = "bleft"  onclick=myFunction("o2")>></button></div>
+        <div class = "horizontal">
+            <div><img src = "University_of_California,_Irvine_seal.svg.png" alt = "UCI logo" width="100px"></div>
+            <div class = "text1">
+            <p>Degree: Bachelor of Science in Computer Science (expected 2028)<br>GPA: 4.0
+                <br>Award: Dean's Honor List<br>Scholarship: Regent's Scholar</p>
+            </div>
+            </div>
+            <div class = "button1" ><button class = "bright" onclick="myFunction('o4')" ></button></div>
+                </div>
+        </div>
+        </div>
+
+
+
+     <div class="with_button" id = "contact">
+
+        <div class = "block_of_main">
+        <div></div>
+
+            <div class = "title1"> <div></div> <div class="title"> CONTACT </div><div></div></div>
+            <div class = "horizontal1">
+             <div class = "button1" ><button class = "bleft"  onclick=myFunction("o3")></button></div>
+        <div class = "horizontal">
+            <div><img src = "me.jpg" class = "Hong Nguyen" width = 100px></div>
+            <div class = "text1">
+                <p>
+            I am Hong, a computer Science student at UCI.
+            I am interested in enhancing more programming skill.
+            And investigating about machine learning.</p>
+            </div>
+            </div>
+            <div class = "button1" ><button class = "bright" onclick="myFunction('o1')" ></button></div>
+                </div>
+        </div>
+        </div>
+
+
+        </div>
+    </div>
+    </div>
+</body>
