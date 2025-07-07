@@ -14,7 +14,6 @@
         .title {background-color: white; text-align: center; font-size: 50px; height:55px; border-radius: 20px; font-weight: bolder;}
         .block_of_main {display:grid; grid-template-rows:20px 40px 30px auto; row-gap: 45px}
         .option {height: 30px; border-radius: 20px;place-items: center; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 3px}
-        .option div {font-size: 13px; font-weight:bold; width: 20vw}
         .horizontal1 { display:grid; grid-template-columns: 20% auto 20%; place-items:center; column-gap: 10px}
         .button1 {display:grid; place-content: baseline }
         .button1  button { height:70px; place-content:start}
@@ -28,7 +27,7 @@
         body {overflow: hidden}
         button:hover {border-color: grey; border-width: 5px}
         .am {onclick: "m"}
-        @media (min-width: 1025px) {
+        @media (min-width: 700px) {
             .horizontal {
                 background-color: white;
                 border-radius: 20px;
@@ -36,9 +35,10 @@
                 grid-template-columns: 120px auto
             }
             #mainblock { display:grid; grid-template-columns: 100vw 100vw 100vw 100vw}
+        .option div {font-size: 12px; font-weight:bold; width: 150px}
 
         }
-        @media (max-width: 1024px) {
+        @media (max-width: 700px) {
 
             .horizontal {
                 background-color: white;
@@ -51,6 +51,8 @@
                 display: grid;
                 grid-template-columns: 100vw 100vw 100vw 100vw
             }
+                    .option div {font-size: 12px; font-weight:bold; width: 20vw}
+
         }
     </style>
 
