@@ -24,7 +24,7 @@
         .bright {background-image: url('https://d1nhio0ox7pgb.cloudfront.net/_img/v_collection_png/512x512/shadow/keyboard_key_right.png'); background-size: cover}
         .option > div {background-color: white; border-radius:20px; text-align: center; height: 30px; place-content: center}
         .option > div:hover {text-decoration: underline; cursor: pointer}
-        body {overflow-x: hidden}
+        body {overflow: hidden}
         button:hover {border-color: grey; border-width: 5px}
         .am {onclick: "m"}
         @media (min-width: 1025px) {
@@ -37,7 +37,7 @@
             #mainblock { display:grid; grid-template-columns: 100vw 100vw 100vw 100vw}
 
         }
-        @media (min-width: 600px) and (max-width: 1024px) {
+        @media (max-width: 1024px) {
 
             .horizontal {
                 background-color: white;
@@ -45,21 +45,12 @@
                 display: grid;
                 grid-template-rows: 105px auto
             }
-            #mainblock{  display:grid; grid-template-columns: 100vw 100vw 100vw 100vw}
 
-        }
-        @media (max-width:599px) {
-
-            .horizontal {
-                background-color: white;
-                border-radius: 20px;
+            #mainblock {
                 display: grid;
-                grid-template-rows: 105px auto
+                grid-template-columns: 100vw 100vw 100vw 100vw
             }
-                        #mainblock{  display:grid; grid-template-columns: 100vw 100vw 100vw 100vw}
-
         }
-
     </style>
 
 </head>
