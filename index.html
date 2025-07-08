@@ -13,7 +13,7 @@
         .text1 {overflow-wrap: anywhere; font-weight: bold}
         .title {background-color: white; text-align: center; font-size: 50px; height:55px; border-radius: 20px; font-weight: bolder;}
         .block_of_main {display:grid; grid-template-rows:20px 10vw 30px auto; row-gap: 45px}
-        .option {height: 30px; border-radius: 20px; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 3px}
+        .option {height: 30px; border-radius: 20px;place-items: center; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 3px}
         .horizontal1 { display:grid; grid-template-columns: 20% auto 20%; place-items:center; column-gap: 10px}
         .button1 {display:grid; place-content: baseline }
         .button1  button { height:70px; place-content:start}
@@ -21,11 +21,13 @@
         .bleft, .bright {width: 70px; border-radius: 15px; height:70px}
         .bleft {background-image: url('https://d1nhio0ox7pgb.cloudfront.net/_img/v_collection_png/512x512/shadow/keyboard_key_left.png'); background-size: cover}
         .bright {background-image: url('https://d1nhio0ox7pgb.cloudfront.net/_img/v_collection_png/512x512/shadow/keyboard_key_right.png'); background-size: cover}
-        .option > div {background-color: white; text-align: center; border-radius:20px; height: 30px; place-content:center}
+        .option > div {background-color: white; border-radius:20px; text-align: center; height: 30px; place-content: center}
         .option > div:hover {text-decoration: underline; cursor: pointer}
         .title {width: 320px}
         body {overflow: hidden}
-        button:hover {border-color: grey; border-width: 5px}
+        #para {width: max(400px)}
+        button:hover {border-color: grey; border-width: 5px; cursor: pointer}
+
         .am {onclick: "m"}
         @media (min-width: 700px) {
             .horizontal {
@@ -79,7 +81,7 @@
              <div class = "button1" ><button class = "bleft" onclick = "myFunction('o4')"></button></div>
         <div class = "horizontal">
             <div><img src = "me.jpg" class = "Hong Nguyen" width = 100px></div>
-            <div class = "text1">
+            <div class = "text1" id = "para">
                 <p> I am Hong, a computer Science student at UCI.
             I am interested in enhancing more programming skill.
             And investigating about machine learning.</p>
@@ -112,6 +114,7 @@
                 <ul> <li> Language: Python</li>
                 <li>Front-End: HTML, CSS, JavaScript</li>
                     <li>Framework: ReactJS</li>
+                    <li>Database: SQLite</li>
                 </ul>
             </div>
             </div>
